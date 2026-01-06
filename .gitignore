@@ -1,0 +1,69 @@
+# 忽略 Baselines 文件夹（包含从其他地方 git clone 的代码）
+Baselines/
+
+# 忽略 datasets 文件夹
+datasets/
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+*.bak
+
+# 数据文件（可选，根据需求调整）
+# *.csv
+# *.json
+# *.parquet
+
+# 结果文件（可选，根据需求调整）
+# results/
+# prompts/
+
+# ====================================================================
+# ACL投稿相关：忽略大文件和结果文件
+# ====================================================================
+
+# Baseline 结果目录
+Baseline/
+
+# Prompts - 特定大文件
+prompts/hades/hades_abstract_step5.jsonl
+prompts/hades/visual_symbol_qwen3-next-80b-a3b-instruct_0_750.json
+prompts/safebench/visual_symbol_qwen3-next-80b-a3b-instruct_0_500_ablation_hint_only.json
+prompts/safebench/visual_symbol_qwen3-next-80b-a3b-instruct_0_500_ablation_emoji_only.json
+prompts/safebench/visual_symbol_qwen3-next-80b-a3b-instruct_0_500.json
+prompts/safebench/vllm_input_0_400_universal.jsonl
+prompts/safebench_ablation/
+
+# 实验结果目录
+results/
+SI_results/
+
+# SI脚本目录（如果不需要上传）
+SI_scripts/
