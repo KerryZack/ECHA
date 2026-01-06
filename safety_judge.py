@@ -14,9 +14,10 @@ from openai import OpenAI
 # 从 judge_templete.py 导入必要的函数和模板
 from judge_templete import judge_template, extract_content
 
-# 默认配置
-API_KEY = "REDACTED_API_KEY"
-BASE_URL_GPT = "https://api.zetatechs.com/v1"
+# 默认配置 - 请设置环境变量
+import os
+API_KEY = os.getenv("API_KEY", "your-api-key-here")
+BASE_URL_GPT = os.getenv("BASE_URL_GPT", "https://api.openai.com/v1")
 
 
 def format_judge_prompt(instruction, response):

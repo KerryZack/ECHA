@@ -5,17 +5,16 @@ from typing import Union, List
 import os
 import json
 import base64
-#xiaoai
-# API_KEY = "REDACTED_XIAOAI_KEY"
-# BASE_URL_GPT = "https://xiaoai.plus/v1"
+# API配置 - 请在本地设置环境变量或创建 config.py
+# 示例: export API_KEY="your_api_key_here"
+import os
 
-qwen_API_KEY = "REDACTED_QWEN_KEY"
+qwen_API_KEY = os.getenv("QWEN_API_KEY", "your-qwen-api-key-here")
 qwen_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 
-API_KEY = "REDACTED_API_KEY"
-BASE_URL_GPT = "https://api.zetatechs.com/v1"
-# BASE_URL_GPT = "https://api.aiskt.com/v1/chat/completions"
+API_KEY = os.getenv("API_KEY", "your-api-key-here")
+BASE_URL_GPT = os.getenv("BASE_URL_GPT", "https://api.openai.com/v1")
 gpt_client = OpenAI(base_url=BASE_URL_GPT, api_key=API_KEY)
 claude_client = OpenAI(base_url=BASE_URL_GPT, api_key=API_KEY)
 gemini_client = OpenAI(base_url=BASE_URL_GPT, api_key=API_KEY)
@@ -24,30 +23,30 @@ deepseek_client = OpenAI(base_url=BASE_URL_GPT, api_key=API_KEY)
 
 
 qwen_client =OpenAI(
-    base_url='https://api-inference.modelscope.cn/v1',
-    api_key='REDACTED_MODELSCOPE_TOKEN', # ModelScope Token
+    base_url=os.getenv('QWEN_BASE_URL', 'https://dashscope.aliyuncs.com/compatible-mode/v1'),
+    api_key=os.getenv('MODELSCOPE_TOKEN', 'your-modelscope-token-here'),
 )
 
 
 seed_client = OpenAI(
     base_url='https://ark.cn-beijing.volces.com/api/v3',
-    api_key='REDACTED_VOLCES_KEY', # ModelScope Token
+    api_key=os.getenv('VOLCES_API_KEY', 'your-volces-api-key-here'),
 )
 
 internvl_client = OpenAI(
-    api_key="REDACTED_INTERNVL_KEY",  # 此处传token，不带Bearer
+    api_key=os.getenv('INTERNVL_API_KEY', 'your-internvl-api-key-here'),
     base_url="https://chat.intern-ai.org.cn/api/v1/",
 )
 
 # qwen_client = OpenAI(base_url=qwen_BASE_URL, api_key=qwen_API_KEY)
 
-
-# deep_api_key = "REDACTED_DEEPSEEK_KEY"
-# deep_url = "https://api.deepseek.com/v1"
+# DeepSeek 配置示例
+# deep_api_key = os.getenv('DEEPSEEK_API_KEY', 'your-deepseek-api-key-here')
+# deep_url = os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com/v1')
 # deepseek_cilent = OpenAI(base_url=deep_url, api_key=deep_api_key)
 
-llama_url = "https://api.deepinfra.com/v1/openai"
-llama_key = "REDACTED_DEEPINFRA_KEY"
+llama_url = os.getenv('DEEPINFRA_BASE_URL', 'https://api.deepinfra.com/v1/openai')
+llama_key = os.getenv('DEEPINFRA_API_KEY', 'your-deepinfra-api-key-here')
 llama_client = OpenAI(base_url=llama_url, api_key=llama_key)
 
 
