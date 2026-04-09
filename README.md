@@ -268,7 +268,7 @@ This research is conducted to expose systemic vulnerabilities in LVLM safety ali
 ```bibtex
 @inproceedings{echa2026acl,
   title={ECHA: Jailbreaking LVLMs via the Mismatch between Implicit Semantic Reconstruction and Explicit Safety Alignment},
-  author={Anonymous},
+  author={Chenxing Xu, Junyong Jiang, Zehu Zhang, Dong Lu},
   booktitle={Findings of the Association for Computational Linguistics: ACL 2026},
   year={2026}
 }
