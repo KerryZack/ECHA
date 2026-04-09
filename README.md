@@ -263,17 +263,6 @@ We use **Qwen3-Guard-Gen-8B** as the automated safety judge, which provides a th
 
 This research is conducted to expose systemic vulnerabilities in LVLM safety alignment and to accelerate the development of more robust defenses. The techniques presented are intended solely for academic red-teaming purposes. We strongly oppose any misuse of these methods to generate harmful content.
 
-## Citation
-
-```bibtex
-@inproceedings{echa2026acl,
-  title={ECHA: Jailbreaking LVLMs via the Mismatch between Implicit Semantic Reconstruction and Explicit Safety Alignment},
-  author={Chenxing Xu, Junyong Jiang, Zehu Zhang, Dong Lu},
-  booktitle={Findings of the Association for Computational Linguistics: ACL 2026},
-  year={2026}
-}
-```
-
 ## License
 
 This project is released under the [MIT License](LICENSE).
