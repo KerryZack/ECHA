@@ -241,7 +241,7 @@ bash run_bs.sh
 | Dataset | # Queries | Categories | Source |
 |---------|:---------:|:----------:|--------|
 | **Hades** | 750 | 5 (Animal, Financial, Privacy, Self-Harm, Violence) | [Li et al., 2024](https://github.com/AoiDragon/HADES) |
-| **SafeBench** | 400 | 8 (Illegal Activity, Hate Speech, Malware, Physical Harm, Fraud, Adult Content, Privacy Violation, Legal Opinion) | [Liu et al., 2024](https://github.com/isXinLiu/MM-SafetyBench) |
+| **SafeBench** | 400 | 8 (Illegal Activity, Hate Speech, Malware, Physical Harm, Fraud, Adult Content, Privacy Violation, Legal Opinion) | [Gong et al., 2025](https://github.com/CryptoAILab/FigStep/tree/main/data) ([paper](https://arxiv.org/abs/2311.05608)) |
 
 ## Target Models
 
